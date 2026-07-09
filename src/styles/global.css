@@ -54,7 +54,8 @@ a:hover { color: var(--blue); }
 main { min-height: 60vh; }
 .section, .hero, .page-hero { max-width: var(--max); margin: 0 auto; padding: 56px 24px; }
 .hero { padding-top: 58px; padding-bottom: 64px; }
-.page-hero { padding-top: 58px; padding-bottom: 30px; }
+.page-hero { padding-top: 58px; padding-bottom: 22px; }
+.page-hero + .section { padding-top: 22px; }
 .eyebrow { color: var(--blue); font-size: 0.82rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; margin: 0 0 18px; }
 h1, h2, h3 { font-family: Manrope, Inter, ui-sans-serif, system-ui, sans-serif; line-height: 1.05; letter-spacing: -0.025em; margin: 0; }
 h1 { font-size: clamp(2.85rem, 7vw, 5.9rem); max-width: 920px; }
@@ -122,7 +123,8 @@ h3 { font-size: 1.36rem; letter-spacing: -0.015em; }
   .site-header { align-items: flex-start; flex-direction: column; }
   .nav { justify-content: flex-start; }
   .section, .hero, .page-hero { padding-top: 42px; padding-bottom: 42px; }
-  .page-hero { padding-bottom: 24px; }
+  .page-hero { padding-bottom: 20px; }
+  .page-hero + .section { padding-top: 18px; }
   .grid, .grid.two, .split { grid-template-columns: 1fr; }
   .card, .cta-inner { padding: 24px; }
 }
