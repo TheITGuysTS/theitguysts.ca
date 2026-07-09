@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const principles = [
+  ['Build things people enjoy using', 'We focus on software that solves real problems, strengthens connections, or simply makes life a little more enjoyable.'],
+  ['Earn trust', 'Whether developing software or providing technical guidance, we believe trust is earned through honesty, reliability, and putting people\'s interests first.'],
+  ['Keep technology simple', 'The best technology often feels effortless. We strive to make products intuitive, dependable, and easy to use.'],
+  ['Think long-term', 'We build with sustainability and maintainability in mind, creating software that can evolve over time rather than chase short-term trends.'],
+  ['Continue learning', 'Technology never stands still, and neither do we. Curiosity and continuous improvement are part of every project.'],
+  ['Enjoy the journey', 'Technology should improve people\'s lives. Sometimes that means solving a serious problem; other times it means helping people relax, laugh, compete, or reconnect.']
+];
+---
+<BaseLayout title="Principles – The IT Guys" description="The principles that guide how The IT Guys builds software and technology solutions.">
+  <section class="page-hero">
+    <p class="eyebrow">Our Principles</p>
+    <h1>Simple principles for building better technology.</h1>
+    <p class="lede">These principles guide how we think about software, service, and the products we choose to build.</p>
+  </section>
+
+  <section class="section">
+    <div class="grid two">
+      {principles.map(([title, body], index) => (
+        <article class="card">
+          <span class="number">{String(index + 1).padStart(2, '0')}</span>
+          <h3>{title}</h3>
+          <p>{body}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

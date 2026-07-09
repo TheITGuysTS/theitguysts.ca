@@ -1,0 +1,22 @@
+---
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/services/', label: 'Services' },
+  { href: '/company/', label: 'Company' },
+  { href: '/principles/', label: 'Principles' },
+  { href: '/legacy-it/', label: 'Legacy IT' },
+  { href: '/contact/', label: 'Contact' }
+];
+const currentPath = Astro.url.pathname;
+---
+<header class="site-header">
+  <a class="brand" href="/" aria-label="The IT Guys home">
+    <span class="brand-main">The IT Guys</span>
+    <span class="brand-sub">Technical Solutions Inc.</span>
+  </a>
+  <nav class="nav" aria-label="Primary navigation">
+    {links.map((link) => (
+      <a href={link.href} class:list={[currentPath === link.href && 'active']}>{link.label}</a>
+    ))}
+  </nav>
+</header>
