@@ -53,7 +53,7 @@ a:hover { color: var(--blue); }
 
 main { min-height: 60vh; }
 .section, .hero, .page-hero { max-width: var(--max); margin: 0 auto; padding: 56px 24px; }
-.hero { padding-top: 76px; padding-bottom: 76px; }
+.hero { padding-top: 58px; padding-bottom: 64px; }
 .page-hero { padding-top: 58px; padding-bottom: 30px; }
 .eyebrow { color: var(--blue); font-size: 0.82rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; margin: 0 0 18px; }
 h1, h2, h3 { font-family: Manrope, Inter, ui-sans-serif, system-ui, sans-serif; line-height: 1.05; letter-spacing: -0.055em; margin: 0; }
