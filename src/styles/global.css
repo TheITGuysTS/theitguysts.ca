@@ -52,12 +52,13 @@ a:hover { color: var(--blue); }
 .nav a.active, .nav a:hover { background: var(--surface); color: var(--navy); box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06); }
 
 main { min-height: 60vh; }
-.section, .hero, .page-hero { max-width: var(--max); margin: 0 auto; padding: 72px 24px; }
-.hero { padding-top: 92px; padding-bottom: 96px; }
+.section, .hero, .page-hero { max-width: var(--max); margin: 0 auto; padding: 56px 24px; }
+.hero { padding-top: 76px; padding-bottom: 76px; }
+.page-hero { padding-top: 58px; padding-bottom: 30px; }
 .eyebrow { color: var(--blue); font-size: 0.82rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; margin: 0 0 18px; }
 h1, h2, h3 { font-family: Manrope, Inter, ui-sans-serif, system-ui, sans-serif; line-height: 1.05; letter-spacing: -0.055em; margin: 0; }
-h1 { font-size: clamp(3.2rem, 8vw, 6.8rem); max-width: 920px; }
-h2 { font-size: clamp(2.2rem, 5vw, 4.3rem); max-width: 820px; }
+h1 { font-size: clamp(2.85rem, 7vw, 5.9rem); max-width: 920px; }
+h2 { font-size: clamp(2rem, 4.4vw, 3.75rem); max-width: 820px; }
 h3 { font-size: 1.36rem; letter-spacing: -0.035em; }
 .lede { font-size: clamp(1.14rem, 2vw, 1.42rem); color: var(--muted); max-width: 760px; margin: 24px 0 0; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
@@ -76,7 +77,7 @@ h3 { font-size: 1.36rem; letter-spacing: -0.035em; }
 .button.secondary { background: transparent; color: var(--navy); border-color: var(--line); }
 .button.secondary:hover { background: var(--surface); color: var(--blue); }
 
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 34px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 22px; }
 .grid.two { grid-template-columns: repeat(2, 1fr); }
 .card {
   background: var(--surface);
@@ -88,8 +89,8 @@ h3 { font-size: 1.36rem; letter-spacing: -0.035em; }
 .card p { color: var(--muted); margin: 12px 0 0; }
 .card .number { color: var(--blue); font-weight: 900; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 22px; display: block; }
 
-.band { background: var(--navy); color: #fff; margin: 42px 0; }
-.band .section { padding-top: 78px; padding-bottom: 78px; }
+.band { background: var(--navy); color: #fff; margin: 32px 0; }
+.band .section { padding-top: 62px; padding-bottom: 62px; }
 .band p, .band .lede { color: #c9d4e6; }
 .band .eyebrow { color: #84c5ff; }
 .band .card { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); box-shadow: none; }
@@ -120,7 +121,8 @@ h3 { font-size: 1.36rem; letter-spacing: -0.035em; }
 @media (max-width: 820px) {
   .site-header { align-items: flex-start; flex-direction: column; }
   .nav { justify-content: flex-start; }
-  .hero, .page-hero { padding-top: 54px; }
+  .section, .hero, .page-hero { padding-top: 42px; padding-bottom: 42px; }
+  .page-hero { padding-bottom: 24px; }
   .grid, .grid.two, .split { grid-template-columns: 1fr; }
   .card, .cta-inner { padding: 24px; }
 }
