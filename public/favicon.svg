@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="The IT Guys icon">
+  <rect width="64" height="64" rx="16" fill="#0b1220"/>
+  <path d="M14 15h36v8H36v26h-8V23H14z" fill="#ffffff"/>
+  <rect x="14" y="15" width="8" height="34" rx="2" fill="#2563eb"/>
+  <circle cx="18" cy="14" r="5" fill="#2563eb"/>
+</svg>
